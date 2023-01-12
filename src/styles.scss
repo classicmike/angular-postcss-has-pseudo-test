@@ -7,3 +7,14 @@ body:has(section) {
   background: aqua;
   color: black;
 }
+
+div:has(p){
+  background: red;
+  color: white;
+}
+
+div:has(section){
+  background: blue;
+  color: white;
+}
+

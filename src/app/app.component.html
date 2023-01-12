@@ -6,4 +6,15 @@
   <p>red background white text</p>
 </div>
 
+<section>
+  <p>This section should have a background color</p>
+  <button (click)="clickIsChanged()">Hello Mike - Press Me!!</button>
+</section>
+
+<div *ngIf="isChanged">
+  <section>
+    <p>This should have a different style.</p>
+  </section>
+</div>
+
 

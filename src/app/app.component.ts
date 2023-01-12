@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'webpackTest';
+  isChanged = false;
+
+  clickIsChanged() {
+    this.isChanged = this.isChanged ? false: true;
+  }
 }

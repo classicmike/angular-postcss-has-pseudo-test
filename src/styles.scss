@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body:has(form) {
+  background-color: blue;
+}
+
+body:has(section) {
+  background: aqua;
+  color: black;
+}

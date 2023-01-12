@@ -1,0 +1,13 @@
+div {
+  size: 200px;
+  border-radius: 5px;
+}
+
+
+
+div:has(p){
+  background: red;
+  color: white;
+}
+
+

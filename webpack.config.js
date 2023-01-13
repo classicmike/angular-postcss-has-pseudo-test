@@ -1,9 +1,4 @@
-const WebpackNotifierPlugin = require('webpack-notifier');
-const purgeCSS = require('@fullhuman/postcss-purgecss');
 const cssHasPseudo = require('css-has-pseudo');
-
-const path = require('path');
-
 
 module.exports = {
   module: {
@@ -15,14 +10,15 @@ module.exports = {
           options: {
             postcssOptions: {
               indent: 'postcss',
+              syntax: 'postcss-scss',
               plugins: [
                 require('postcss-short')(),
                 cssHasPseudo()
               ]
             }
           }
-        }]
+        }],
       }
     ]
   },
-}
+};

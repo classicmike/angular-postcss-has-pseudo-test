@@ -1,5 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
-body:has(form) {
+// About this file
+// 'sui-integration.scss.tmp' is a template file that is used by the config manager
+// build to replace the '@@CUSTOMER@@' flag with the correct customer implementation
+// so styles will be built based on that customer. At the end of the build process, a
+// 'sui-integration.scss' file is generated with the correct customer to be built.
+//
+// Note: This is a deliberate file that should be committed and any intended changes for
+// 'sui-integration.scss' should be made here. DO NOT DELETE
+
+.body:has(form) {
   background-color: blue;
 }
 
